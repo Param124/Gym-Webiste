@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Param Fitness</title>
+   <link rel="stylesheet" href="CSS/style.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+<style>
+    body{
+        /* CSS Reset */
+        margin:0px;
+        padding:0px;
+        background:url('img/abs.jpg');
+        color:white;
+        font-family: 'Playball', cursive;
+        
+    }
+    .left{
+        display:inline-block;               /* is mai border text ka hi area cover krega*/
+           /* border:2px solid red; */
+           position: absolute;
+        left:60px;
+        top:20px;
+        line-height: 5px;
+    }
+    .left img{
+        width: 80px;
+        
+    }
+    .left div{
+        text-align: center;
+    }
+    .mid{
+        display:block;
+        width:33%;
+        margin:29px auto;
+        /* border:2px solid green; */
+    }
+    .right{
+   
+        position:absolute;
+        /* float:right; */
+        right:34px;
+        top:43px;
+        display:inline-block;  
+        /* border:2px solid yellow; */
+    }
+    .navbar{
+        display:inline-block;
+    }
+    .navbar li{
+        display:inline-block;
+        font-size:17px
+       
+    }
+    .navbar li a{
+        color:white;
+        text-decoration:none;
+        padding:15px 16px;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration:underline;
+        color:grey;
+    }
+    .btm{
+        margin:0px 9px;
+        background-color:black;
+        color:white;
+        padding:3px 14px;
+        /* border:2px solid red; */
+        font-size:13px;
+        cursor: pointer;
+        font-family: 'Playball', cursive;
+    }
+    .btm:hover{
+        background-color:skyblue;
+    }
+    .container{
+        border: 2px solid grey;
+    width: 300px;
+    margin: 125px 209px;
+    padding: 37px 100px;
+    border-radius: 10px;
+
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 200px;
+        padding:5px;
+        margin:15px auto;
+        /* border:2px solid greenyellow; */
+        font-family: 'Playball', cursive;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display:block;
+        width:55%;
+        margin:auto
+    }
+
+</style>
+<body>
+    
+<header class="header">
+            <!-- left box for logo -->
+            <div class="left">
+                  <img src="img/gymlogo.jpg" alt="">
+                  <div>Param Fitness</div>
+            </div>
+
+            <!-- mid box for nav bar-->
+ <div class="mid">
+      <ul class="navbar">
+           <li><a href="#" class="active">Home</a></li>
+           <li><a href="#">About Us</a></li>
+           <li><a href="#">Fitness center</a></li>
+           <li><a href="#">Contact Us</a></li>
+       </ul>
+ </div>
+             <!-- right box for buttons -->
+            <div class="right">
+          <button class="btm">Call US</button>
+          <button class="btm">Email Us</button>
+            </div>
+</header>
+<div class="container">
+   <h1>Join the best Gym</h1>
+   <form action="noaction.jsp">
+       <div class="form-group">
+           <input type="text" name="Name" placeholder="Enter your name">
+
+       </div>
+       <div class="form-group">
+        <input type="text" name="Name" placeholder="Enter your age">
+        
+    </div>
+    <div class="form-group">
+        <input type="text" name="Name" placeholder="Enter your gender">
+        
+    </div>
+    <div class="form-group">
+        <input type="text" name="Name" placeholder="Enter your email">
+        
+    </div>
+    
+   </form>
+   <div>
+    <button class="btm">Submit</button>
+   </div>
+</div>
+</body>
+</html>
